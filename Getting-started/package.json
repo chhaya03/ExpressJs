@@ -1,0 +1,15 @@
+{
+  "name": "chhaya",
+  "version": "1.0.0",
+  "description": "this is express learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "chhaya",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "url": "^0.11.4"
+  }
+}
