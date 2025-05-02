@@ -105,3 +105,42 @@ Status codes are part of the HTTP protocol and provide information about the out
 501 Not Implemented: The server does not support the functionality required to fulfill the request (e.g., the method used is not supported by the server).<br>
 503 Service Unavailable: The server is temporarily unable to handle the request (e.g., due to overload or maintenance).
 
+
+<h1>model-view-controller:</h1>
+Model-View-Controller (MVC) is a software architectural pattern used to separate concerns in an application. In the context of Express.js, which is a web framework for Node.js, the MVC pattern helps organize your code better and makes it easier to maintain, test, and scale.
+
+<h2>🔧 MVC Components in Express.js:</h2>
+1. Model (M) – Handles data and business logic
+  <ul>
+    <li>Represents the data structure (usually interacts with a database).</li>
+    <li>Example: Mongoose models for MongoDB.</li>
+  </ul>
+
+  2.View (V) – Handles the presentation layer
+  <ul>
+    <li>What the user sees – usually HTML pages rendered using a templating engine like EJS, Pug, or Handlebars.</li>
+  </ul>
+
+   3.Controller (C) – Handles application logic and user input
+  <ul>
+    <li>Receives input from routes, processes it (possibly calling the model), and returns a response (view or JSON).</li>
+  </ul>
+
+
+  <h2>✅ Folder Structure Example (Express.js + MVC):</h2>
+  my-app/<br>
+├── models/<br>
+│   └── userModel.js<br>
+├── views/<br>
+│   └── user.ejs<br>
+├── controllers/<br>
+│   └── userController.js<br>
+├── routes/<br>
+│   └── userRoutes.js<br>
+├── app.js
+
+
+<h2>✅ Benefits of Using MVC in Express.js:</h2>
+1. Clean separation of concerns<br>
+2. Easier collaboration for teams (frontend/backend)<br>
+3. Scalable and testable architecture
