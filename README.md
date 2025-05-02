@@ -62,3 +62,46 @@ Parsing JSON, forms, etc.<br>
 Error handling<br>
 Serving static files<br>
 Security (like Helmet.js)
+
+
+<h1>Status code :</h1>
+Status codes are part of the HTTP protocol and provide information about the outcome of an HTTP request. When a client (such as a browser or an API client) makes a request to a server, the server responds with a status code to indicate whether the request was successful or if there was an issue. These codes are grouped into five categories, each representing different types of responses:<br>
+
+<ol>
+  <li>Informational responses (100 – 199)  </li>
+<li>Successful responses (200 – 299)  </li>
+<li>Redirection messages (300 – 399)  </li>
+<li>Client error responses (400 – 499)  </li>
+<li>Server error responses (500 – 599)  </li>
+
+</ol>
+
+
+<h2>1. Informational (1xx):</h2>
+100 Continue: The server has received the request headers, and the client should proceed to send the request body.<br>
+101 Switching Protocols: The server is switching protocols as requested by the client.
+
+<h2>2. Successful (2xx):</h2>
+200 OK: The request was successful, and the server has returned the requested data. This is the most common status code for successful responses.<br>
+201 Created: The request has been fulfilled, and a new resource has been created. Typically used when a resource is created via a POST request.<br>
+204 No Content: The server successfully processed the request, but there is no content to send in the response (often used for DELETE requests).
+
+<h2>3. Redirection (3xx)
+:</h2>
+301 Moved Permanently: The requested resource has been permanently moved to a new URL.<br>
+302 Found: The requested resource has been temporarily moved to a different URL.<br>
+303 See Other: The server recommends the client access a different URL using a GET request.
+
+<h2>4. Client Error (4xx):</h2>
+400 Bad Request: The request could not be understood by the server due to malformed syntax.<br>
+401 Unauthorized: The client must authenticate themselves to get the requested response.<br>
+403 Forbidden: The server understands the request, but it refuses to authorize it.<br>
+404 Not Found: The requested resource could not be found on the server.<br>
+405 Method Not Allowed: The method specified in the request is not allowed for the resource.
+
+
+<h2>5. Server Error (5xx):</h2>
+500 Internal Server Error: The server encountered an unexpected condition that prevented it from fulfilling the request.<br>
+501 Not Implemented: The server does not support the functionality required to fulfill the request (e.g., the method used is not supported by the server).<br>
+503 Service Unavailable: The server is temporarily unable to handle the request (e.g., due to overload or maintenance).
+
