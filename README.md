@@ -144,3 +144,22 @@ Model-View-Controller (MVC) is a software architectural pattern used to separate
 1. Clean separation of concerns<br>
 2. Easier collaboration for teams (frontend/backend)<br>
 3. Scalable and testable architecture
+
+
+
+<h1>Multer:</h1>
+This is a simple Node.js and Express application demonstrating how to upload files using the Multer middleware.
+
+<h2>🚀 Features:</h2>
+Upload single files (e.g., images, documents, etc.)<br>
+Save uploaded files in a local upload/ directory<br>
+Uses EJS for rendering a basic file upload form
+
+
+<h2>Technologies Used:</h2>
+Node.js<br>
+Express.js<br>
+Multer<br>
+EJS (for templating)
+
+
